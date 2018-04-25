@@ -1,0 +1,81 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+  <servlet-name>SayHelloMyWay</servlet-name>
+  <servlet-class>bg.proxiad.demo.SayHelloMyWay</servlet-class>
+
+      <init-param>
+        <param-name>greeting</param-name>
+        <param-value>Hello</param-value>
+      </init-param>
+
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SayHelloMyWay</servlet-name>
+    <url-pattern>/say-hello-my-way</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MyWayThroughJSP</servlet-name>
+    <jsp-file>/hello-my-way.jsp</jsp-file>
+
+    <init-param>
+      <param-name>greet</param-name>
+      <param-value>Hallo</param-value>
+    </init-param>
+
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MyWayThroughJSP</servlet-name>
+    <url-pattern>/say-hello-my-way-through-jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestCount</servlet-name>
+    <servlet-class>bg.proxiad.demo.MyRequestCount</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RequestCount</servlet-name>
+    <url-pattern>/count-my-requests</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AllRequest</servlet-name>
+    <servlet-class>bg.proxiad.demo.AllRequests</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AllRequest</servlet-name>
+    <url-pattern>/count-all-requess</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SayHello</servlet-name>
+    <servlet-class>bg.proxiad.demo.SayHelloServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SayHello</servlet-name>
+    <url-pattern>/say-hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HelloThroughJSP</servlet-name>
+    <servlet-class>bg.proxiad.demo.SayHelloThroughJspServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HelloThroughJSP</servlet-name>
+    <url-pattern>/say-hello-through-jsp</url-pattern>
+  </servlet-mapping>
+
+</web-app>
