@@ -1,0 +1,17 @@
+.huge-cogs{
+  font-size: 2000%;
+}
+
+.safety{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.lead{
+  line-height: 1.6;
+}
+
+.h-100{
+  min-height: 100%;
+  height: auto!important;
+}
